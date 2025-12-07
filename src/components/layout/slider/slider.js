@@ -8,7 +8,7 @@
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -26,16 +26,16 @@ import "./slider.scss";
 function initSliders() {
 	// Список слайдерів
 	// Перевіряємо, чи є слайдер на сторінці
-	if (document.querySelector('.swiper')) { // <- Вказуємо склас потрібного слайдера
+	if (document.querySelector('.hero__slider')) { // <- Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
-		new Swiper('.swiper', { // <- Вказуємо склас потрібного слайдера
+		new Swiper('.hero__slider', { // <- Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation],
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 10,
 			//autoHeight: true,
 			speed: 800,
 
@@ -55,12 +55,17 @@ function initSliders() {
 			*/
 
 			// Пагінація
-			/*
+
 			pagination: {
-				el: '.swiper-pagination',
+				el: '.hero__slider-pagination',
 				clickable: true,
+				renderBullet: function (index, className) {
+					return `<span class="${className}">${(index + 1)
+						.toString()
+						.padStart(2, '0')}</span>`;
+				}
 			},
-			*/
+
 
 			// Скроллбар
 			/*
@@ -72,8 +77,8 @@ function initSliders() {
 
 			// Кнопки "вліво/вправо"
 			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
+				prevEl: '.hero__slider-button-prev',
+				nextEl: '.hero__slider-button-next',
 			},
 			/*
 			// Брейкпоінти

@@ -1,7 +1,74 @@
 <script type="module" src="@components/pages/home/home.js"></script>
 <link rel="stylesheet" href="@components/pages/home/home.scss">
 
-<main class="page page--home">
-	<div class="page__container">
-	</div>
+<main class="page">
+	<section class="hero">
+		<img src="@img/hero-slide-1.jpg" class="hero__slide-img" alt="">
+
+		<div class="hero__container hero__inner">
+			<div class="hero__control-panel">
+				<div class="hero__slider-pagination"></div>
+
+				<div class="hero__slider-buttons">
+					<button class="hero__slider-button hero__slider-button-prev"></button>
+					<button class="hero__slider-button hero__slider-button-next"></button>
+				</div>
+			</div>
+
+			<!-- SLIDER -->
+			<div data-fls-slider class="hero__slider swiper">
+				<div class="swiper-wrapper">
+
+					<div class="hero__slide swiper-slide">
+
+						<div class="hero__slide-content">
+							<h1 class="hero__slide-title">Invest In Your Future, Invest With Us</h1>
+
+							<div class="hero__slide-body">
+								<p class="hero__slide-text">
+									It is a multi-venue performing arts centre at Sydney Harbour located in Sydney, New
+									South Wales, Australia. It is one of the 20th century's most famous and distinctive
+									buildings.
+								</p>
+								<button data-fls-button class="button">View Project<span
+										class="--icon-arrow"></span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__slide swiper-slide">
+
+						<div class="hero__slide-content">
+							<h1 class="hero__slide-title">Architecture That Inspires</h1>
+
+							<div class="hero__slide-body">
+								<p class="hero__slide-text">
+									One of the 20th century's most famous and distinctive buildings.
+								</p>
+								<button data-fls-button class="button">View Project<span
+										class="--icon-arrow"></span></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__slide swiper-slide">
+
+						<div class="hero__slide-content">
+							<h1 class="hero__slide-title">Leading The Future</h1>
+
+							<div class="hero__slide-body">
+								<p class="hero__slide-text">
+									Discover world-class design and innovative engineering solutions.
+								</p>
+								<button data-fls-button class="button">View Project<span
+										class="--icon-arrow"></span></button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
 </main>
