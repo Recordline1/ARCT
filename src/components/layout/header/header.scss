@@ -1,5 +1,45 @@
 .header {
-	// .header__container
+
 	&__container {
+		display: flex;
+		align-items: center;
 	}
+
+	&__logo-block {
+		color: $logoColor;
+	}
+
+	&__menu {
+		flex: 1 1 auto;
+	}
+
+	&__buttons {
+	}
+}
+
+.menu {
+
+	&__body {
+	}
+
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.neader {
+
+	&__search {
+	}
+
+	&__burger {
+	}
+}
+.--icon-search {
+}
+.icon-menu {
 }

@@ -8,7 +8,7 @@ export default {
 		snippets: true
 	},
 	devcomponents: {
-		enable: false,
+		enable: true,
 		filename: '_components.html'
 	},
 	git: {
@@ -48,7 +48,7 @@ export default {
 		devfiles: true,
 	},
 	fonts: {
-		iconsfont: false,
+		iconsfont: true,
 		download: false
 	},
 	images: {

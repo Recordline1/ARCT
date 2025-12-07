@@ -1,0 +1,17 @@
+@font-face { 
+	font-family: "iconfont"; 
+	font-display: swap;
+	src: url("C://SystemDisk/Patreon/Portfolio/ARCT/src/assets/svgicons/preview/iconfont.woff2?95889a8f15a7d8d90e68a3a39e5da93c") format("woff2"); 
+} 
+[class*="--icon-"]::before{
+	font-family: iconfont; 
+}
+	[class*="--icon-search"]::before { 
+		content: "\f101"; 
+	} 
+	[class*="--icon-logo"]::before { 
+		content: "\f102"; 
+	} 
+	[class*="--icon-burger"]::before { 
+		content: "\f103"; 
+	} 

@@ -33,6 +33,8 @@
 	}
 	// .menu__list
 	&__list {
+		display: flex;
+		@include adaptiveValue("gap",44 ,15 );
 		@media (max-width: toEm($mobile)) {
 		}
 	}
@@ -41,6 +43,7 @@
 	}
 	// .menu__link
 	&__link {
+		color: $menuColor;
 		@media (max-width: toEm($mobile)) {
 		}
 	}
