@@ -5,33 +5,35 @@
 
     // .menu__body
     &__body {
-        @media (max-width: toEm($mobile)) {
+        @media (max-width: toEm($mobile)) {}
+
+        position: fixed;
+        width: 70%;
+        overflow: hidden;
+        height: 100svh;
+        right: -100%;
+        top: 0;
+        overflow: auto;
+        padding: 95px 15px 30px 15px;
+        transition: right 0.5s ease;
+        // background-color:$headerIconBG;
+
+        &::before {
+            content: "";
             position: fixed;
             width: 100%;
-            height: 100svh;
+            height: 70px;
             left: -100%;
             top: 0;
-            overflow: auto;
-            padding: 50px 15px 30px 15px;
-            transition: left 0.3s;
+            transition: right 0.5s;
+            z-index: 2;
+        }
+
+        [data-fls-menu-open] & {
+            right: 0;
 
             &::before {
-                content: "";
-                position: fixed;
-                width: 100%;
-                height: 70px;
-                left: -100%;
-                top: 0;
-                transition: left 0.3s;
-                z-index: 2;
-            }
-
-            [data-fls-menu-open] & {
                 left: 0;
-
-                &::before {
-                    left: 0;
-                }
             }
         }
     }
@@ -39,6 +41,9 @@
     // .menu__list
     &__list {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @include adaptiveValue("gap", 44, 15);
 
         @media (max-width: toEm($mobile)) {}
@@ -49,22 +54,23 @@
 
     // .menu__link
     &__link {
-		&:hover{
-			color: black;
-		}
-        color: $menuColor;
+        &:hover {
+            color: black;
+        }
+
+        font-size: 21px;
+        color: white;
+
         @media (max-width: toEm($mobile)) {}
     }
 }
 
 //Burger Icon
 .icon-menu {
-	position: relative;
-    display: flex;
-	flex-direction: column;
-	gap: 1px;
+    position: relative;
+    display: block; // Меняем flex на block для точного позиционирования
     width: toRem(14);
-  
+    height: toRem(11); // Задаем высоту, чтобы контролировать расстояние
     z-index: 5;
 
     @media (any-hover: none) {
@@ -74,31 +80,47 @@
     span,
     &::before,
     &::after {
-		content: "";
-		display: block;
-		width: 14px;
-		height: 3px;
+        content: "";
+        position: absolute; // Все линии накладываются друг на друга
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
         transition: all 0.3s ease 0s;
-		background-color: #fff;
-    }   
+    }
 
+    // Расставляем линии в обычном состоянии
+    &::before {
+        top: 0;
+    }
+
+    span {
+        top: calc(50% - 1.5px); // Ровно по центру
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    // Состояние при открытом меню
     [data-fls-menu-open] & {
         span {
             width: 0;
+            left: 50%; // Анимация исчезновения к центру
+            opacity: 0;
         }
 
         &::before,
-        &::after {}
+        &::after {
+            top: calc(50% - 1.5px); // Смещаем обе линии в центр перед поворотом
+        }
 
         &::before {
-            top: calc(50% - 1px);
             transform: rotate(-45deg);
         }
 
         &::after {
-            bottom: calc(50% - 1px);
             transform: rotate(45deg);
         }
     }
-
 }

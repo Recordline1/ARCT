@@ -28,9 +28,13 @@ function initSliders() {
 	// Перевіряємо, чи є слайдер на сторінці
 	if (document.querySelector('.hero__slider')) { // <- Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
+		const heroBg = document.querySelector('.hero__bg img');
+		
 		new Swiper('.hero__slider', { // <- Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
+
+
 			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
@@ -104,6 +108,28 @@ function initSliders() {
 			*/
 			// Події
 			on: {
+				init(swiper) {
+					const active = swiper.slides[swiper.activeIndex];
+					const bg = active.dataset.bg;
+
+					if (bg) {
+						heroBg.src = bg;
+					}
+				},
+
+				slideChange(swiper) {
+					const active = swiper.slides[swiper.activeIndex];
+					const bg = active.dataset.bg;
+
+					if (bg) {
+						heroBg.classList.add('fade-out');
+
+						setTimeout(() => {
+							heroBg.src = bg;
+							heroBg.classList.remove('fade-out');
+						}, 300);
+					}
+				}
 
 			}
 		});

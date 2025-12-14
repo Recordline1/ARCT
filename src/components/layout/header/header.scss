@@ -1,11 +1,18 @@
 .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    top: 65px;
+    top: 50px;
     left: 0;
-    z-index: 3;
+    z-index: 50;
+    padding: 15px 0;
+    @include adaptiveValue("top", 50, 0);
+    transition: all 0.3s;
+
     &__container {
+        position: relative;
+        z-index: 50;
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -27,15 +34,13 @@
 
     }
 
-    &__menu {
-        flex: 1 1 auto;
-    }
+    &__menu {}
 
     &__buttons {
         display: flex;
-		gap: 24px;
+        gap: 24px;
         align-items: center;
-
+        cursor: pointer;
     }
 
     &__button {
@@ -45,25 +50,79 @@
         width: 44px;
         height: 44px;
         border-radius: 50%;
-		color: #fff;
-        background-color: rgba(32, 31, 31, 0.6);
+        color: #fff;
+        background-color: $headerIconBG;
     }
-}
 
-.menu {
+    &__search-body {
+        max-width: 770px;
+        // padding: 0 15px;
+        margin: 0 auto;
+        position: absolute;
 
-    &__body {}
+        inset: 0;
+        width: 100%;
+        min-height: 54px;
+        opacity: 0;
+        transition: all ease-in 0.3s;
 
-    &__list {}
+        [search-open] & {
+            opacity: 1;
+            top: 100%;
+        }
 
-    &__item {}
+    }
 
-    &__link {}
-}
+    &__input-body {
+        display: flex;
+    }
 
-.neader {
+    &__input {
+        position: relative;
+        background-color: #fff;
+        border: 2px solid $menuColor;
+        padding: 0 40px 0 15px;
+        font-size: 18px;
+        width: 100%;
+        height: 54px;
+        margin-bottom: 10px;
 
-    &__search {}
+        &:focus {
+            outline: none;
+        }
 
-    &__burger {}
+    }
+
+    &__search-close {
+        position: relative;
+
+        // width: 14px;
+        // height: 14px;
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(50% - 7px);
+            right: 10px;
+            width: 14px;
+            height: 3px;
+            background-color: #000;
+        }
+
+        &::after {
+            transform: translate(-50%, 0%) rotate(45deg);
+        }
+
+        &::before {
+            transform: translate(-50%, 0%) rotate(-45deg);
+        }
+    }
+
+    &__search-content {
+        background-color: #fff;
+        min-height:
+            250px;
+        border: 1px solid rgba(0, 0, 0, 0.116);
+    }
+
 }
