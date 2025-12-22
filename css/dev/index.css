@@ -144,6 +144,7 @@ body {
   position: relative;
   z-index: 9;
   transition: transform 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-color: #fff;
 }
 [data-fls-menu-open] .wrapper {
   transform: scale(0.95) translateX(-70%);
