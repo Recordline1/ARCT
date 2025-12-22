@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/logo.ico">
+		<title>ARCT</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1766421306587"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1766421306587">
+	</head>
+	<body>
+		<div class="header__menu menu">
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link menu__link--active">Home</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">About</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Blog</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Contacts</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+		<div class="wrapper">
+			<header data-fls-header-scroll="" data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__logo-block">
+						<a href="#" class="header__icon --icon-logo"></a>
+						<p class="header__logo-text">ARCT</p>
+					</div>
+					<!--
+<div class="header__menu menu">
+<nav class="menu__body">
+<ul class="menu__list">
+<li class="menu__item">
+<a href="" class="menu__link">Home</a>
+</li>
+<li class="menu__item">
+<a href="" class="menu__link">About</a>
+</li>
+<li class="menu__item">
+<a href="" class="menu__link">Services</a>
+</li>
+<li class="menu__item">
+<a href="" class="menu__link">Portfolio</a>
+</li>
+<li class="menu__item">
+<a href="" class="menu__link">Contact</a>
+</li>
+</ul>
+</nav>
+</div>
+-->
+					<div class="header__buttons">
+						<button type="button" class="header__button header__search --icon-search"></button>
+						<div data-fls-menu="" class="header__button">
+							<button type="button" class="icon-menu">
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="header__search-body">
+					<div class="header__input-body">
+						<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="" class="header__input">
+						<button type="button" class="header__search-close"></button>
+					</div>
+					<!-- <div class="header__search-content"></div> -->
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero">
+					<div class="hero__bg">
+						<img src="" class="hero__slide-img" alt="">
+					</div>
+					<div class="hero__container hero__inner">
+						<div class="hero__control-panel">
+							<div class="hero__slider-pagination"></div>
+							<div class="hero__slider-buttons">
+								<button class="hero__slider-button hero__slider-button-prev"></button>
+								<button class="hero__slider-button hero__slider-button-next"></button>
+							</div>
+						</div>
+						<div data-fls-slider="" class="hero__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="hero__slide swiper-slide" data-bg="assets/img/hero-slide-2.png">
+									<div class="hero__slide-content">
+										<h1 class="hero__slide-title">Architecture That Inspires</h1>
+										<div class="hero__slide-body">
+											<p class="hero__slide-text">One of the 20th century's most famous and distinctive buildings.</p>
+											<button data-fls-button="" class="button">
+												View Project
+												<span class="--icon-arrow"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="hero__slide swiper-slide" data-bg="assets/img/hero-slide-1.jpg">
+									<div class="hero__slide-content">
+										<h1 class="hero__slide-title">Leading The Future</h1>
+										<div class="hero__slide-body">
+											<p class="hero__slide-text">Discover world-class design and innovative engineering solutions.</p>
+											<button data-fls-button="" class="button">
+												View Project
+												<span class="--icon-arrow"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="hero__slide swiper-slide" data-bg="assets/img/hero-slide-3.png">
+									<div class="hero__slide-content">
+										<h1 class="hero__slide-title">Invest In Your Future, Invest With Us</h1>
+										<div class="hero__slide-body">
+											<p class="hero__slide-text">
+												It is a multi-venue performing arts centre at Sydney Harbour located in Sydney, New
+									South Wales, Australia. It is one of the 20th century's most famous and distinctive
+									buildings.
+											</p>
+											<button data-fls-button="" class="button">
+												View Project
+												<span class="--icon-arrow"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about hero--about">
+					<div class="about__container">
+						<div class="inner-content">
+							<div class="about__content">
+								<h2 data-fls-title="" class="about__title title">about me</h2>
+								<div class="about__body">
+									<h3 class="about__body-title">
+										Viverra senectus lorem ipsum dolor sit adui ultricies dolor.
+							Varius
+							nibh velit pellentesque sapi viverra euen, sapien non senectus odio neque dignissim.
+									</h3>
+									<p class="about__body-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et mauris sed faucibus amet
+							lobortis
+							netus vehicula pretium. Rhoncus laoreet feugiat orci rutrum risus gravida ultricies lacinia
+							faucibus. Mauris ut id scelerisque quis hac luctus nunc. Quis at maecenas velit non. Sit
+							amet,
+							consectetur adipiscing elit. Et mauris sed faucibus amet lobortis netus vehicula pretium.
+							Rhoncus laoreet feugiat orci rutrum risus gravida ultricies lacinia faucibus. Mauris ut id
+							scelerisque quis hac luctus nunc. Quis at maecenas velit non. Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit.
+									</p>
+									<p class="about__body-text">
+										Et mauris sed faucibus amet lobortis netus vehicula pretium. Rhoncus laoreet feugiat orci
+							rutrum
+							risus gravida ultricies lacinia faucibus. Mauris ut id scelerisque quis hac luctus nunc.
+							Quis at
+							maecenas velit non.
+									</p>
+									<button data-fls-button="" class="button about__body-button">
+										View my works
+										<span class="--icon-arrow"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="portfolio hero--portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__content">
+							<div data-fls-tabs="" class="portfolio__tabs tabs">
+								<div class="inner-content">
+									<div class="tabs__header">
+										<div class="tabs__title-block">
+											<h2 data-fls-title="" class="portfolio__title title">My portfolio</h2>
+											<p class="portfolio__text">
+												Viverra senectus dui ultricies dolor varius nibh velit
+									sapien, sapien pellentesque ue dignissim.
+											</p>
+										</div>
+										<nav data-fls-tabs-titles="" class="tabs__navigation">
+											<button type="button" class="tabs__title --tab-active">All</button>
+											<button type="button" class="tabs__title">Houses</button>
+											<button type="button" class="tabs__title">Buildings</button>
+											<button type="button" class="tabs__title">Hotels</button>
+											<button type="button" class="tabs__title">Interior</button>
+											<button type="button" class="tabs__title">Living rooms</button>
+										</nav>
+									</div>
+								</div>
+								<div data-fls-tabs-body="" class="tabs__content">
+									<div class="tabs__body">
+										<div class="tabs__all">
+											<img class="tabs__all--big" src="./assets/img/portfolio/Rectangle%2037.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2038.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2046.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2040.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2041.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2053.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2054.jpg" alt="Image">
+											<img class="tabs__all--big" src="./assets/img/portfolio/Rectangle%2052.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2056.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2055.jpg" alt="Image">
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="tabs__inner-body">
+											<img src="./assets/img/portfolio/Rectangle%2038.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2040.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2041.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2056.jpg" alt="Image">
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="tabs__inner-body">
+											<img src="./assets/img/portfolio/Rectangle%2046.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2053.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2054.jpg" alt="Image">
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="tabs__inner-body">
+											<img src="./assets/img/portfolio/Rectangle%2037.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2052.jpg" alt="Image">
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="tabs__inner-body">
+											<img src="./assets/img/portfolio/Rectangle%2055.jpg" alt="Image">
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="tabs__inner-body">
+											<img src="./assets/img/portfolio/Rectangle%2053.jpg" alt="Image">
+											<img src="./assets/img/portfolio/Rectangle%2054.jpg" alt="Image">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="services hero--services">
+					<div class="services__container">
+						<div class="services__inner-container">
+							<div class="services__title-block">
+								<h2 data-fls-title="" class="services__title title">view my services</h2>
+								<div class="services__text">
+									Id at urna non viverra eu volutpat porttitor elementum. Viverra senectus
+						dui ultricies dolor. Varius nibh velit pellentesque sapien, sapien neque dignissim.
+								</div>
+							</div>
+							<div class="services__colums">
+								<div class="services__column column-services">
+									<h3 class="column-services__title">Architecture Portfolio</h3>
+									<p class="column-services__text">
+										There are many variations of passages of Lorem is as Ipsum
+							available but the majority have suffered alteration
+									</p>
+								</div>
+								<div class="services__column column-services">
+									<h3 class="column-services__title">planning process</h3>
+									<p class="column-services__text">
+										There are many variations of passages of Lorem is as Ipsum
+							available but the majority have suffered alteration
+									</p>
+								</div>
+								<div class="services__column column-services">
+									<h3 class="column-services__title">unique design</h3>
+									<p class="column-services__text">
+										There are many variations of passages of Lorem is as Ipsum
+							available but the majority have suffered alteration
+									</p>
+								</div>
+								<div class="services__column column-services">
+									<h3 class="column-services__title">consultation</h3>
+									<p class="column-services__text">
+										There are many variations of passages of Lorem is as Ipsum
+							available but the majority have suffered alteration
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__achievements achievements">
+						<div data-watch-root="achievements-watch" class="">
+							<div class="achievements__column">
+								<span data-fls-digcounter="" class="achievements__column-number">25+</span>
+								<span class="achievements__column-text">Years of Experience</span>
+							</div>
+							<div class="achievements__column">
+								<span data-fls-digcounter="" class="achievements__column-number">150+</span>
+								<span class="achievements__column-text">Completed Projects</span>
+							</div>
+							<div class="achievements__column">
+								<span data-fls-digcounter="" class="achievements__column-number">100+</span>
+								<span class="achievements__column-text">Happy Clients</span>
+							</div>
+							<div class="achievements__column">
+								<span data-fls-digcounter="" class="achievements__column-number">50+</span>
+								<span class="achievements__column-text">Awards Won</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="says hero--says">
+					<picture>
+						<source media="(max-width: 600px)" srcset="./assets/img/says/bg-600.webp" type="image/webp">
+						<source media="(max-width: 1200px)" srcset="./assets/img/says/bg-1200.webp" type="image/webp">
+						<img class="says__bg" alt="Image" src="./assets/img/says/bg.webp">
+					</picture>
+					<div class="says__container">
+						<div class="says__body">
+							<h2 data-fls-title="" class="says__title title">what client says</h2>
+							<div data-fls-slider="" class="says__slider swiper">
+								<div class="says__wrapper swiper-wrapper">
+									<div class="says__slide slide-says swiper-slide">
+										<picture>
+											<img class="slide-says__quotes" alt="Image" src="./assets/img/says/quotes.webp">
+										</picture>
+										<p class="slide-says__text">
+											"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+								mauris sed
+								faucibus amet lobortis netus vehicula pretium. Rhoncus laoreet feugiat orci rutrum risus
+								gravida ultricies lacinia faucibus."
+										</p>
+										<div class="slide-says__author">armando gonzález</div>
+										<div class="slide-says__author-position">CEO, unity real state</div>
+									</div>
+									<div class="says__slide slide-says swiper-slide">
+										<picture>
+											<img class="slide-says__quotes" alt="Image" src="./assets/img/says/quotes.webp">
+										</picture>
+										<p class="slide-says__text">
+											"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+								mauris sed
+								faucibus amet lobortis netus vehicula pretium. Rhoncus laoreet feugiat orci rutrum risus
+								gravida ultricies lacinia faucibus."
+										</p>
+										<div class="slide-says__author">armando gonzález</div>
+										<div class="slide-says__author-position">CEO, unity real state</div>
+									</div>
+									<div class="says__slide slide-says swiper-slide">
+										<picture>
+											<img class="slide-says__quotes" alt="Image" src="./assets/img/says/quotes.webp">
+										</picture>
+										<p class="slide-says__text">
+											"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+								mauris sed
+								faucibus amet lobortis netus vehicula pretium. Rhoncus laoreet feugiat orci rutrum risus
+								gravida ultricies lacinia faucibus."
+										</p>
+										<div class="slide-says__author">armando gonzález</div>
+										<div class="slide-says__author-position">CEO, unity real state</div>
+									</div>
+								</div>
+							</div>
+							<div class="says__slider__pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="faqs hero--faqs">
+					<div class="faqs__container">
+						<div class="faqs__inner-container">
+							<div class="faqs__title-block">
+								<h2 data-fls-title="" class="faqs__title title">FAQS</h2>
+								<div class="faqs__text">
+									Id at urna non viverra eu volutpat porttitor elementum. Viverra senectus dui
+						ultricies dolor.
+								</div>
+							</div>
+							<div data-fls-spollers="" class="faqs__spollers">
+								<details class="spollers__item">
+									<summary class="spollers__title">What type of projects do you do?</summary>
+									<div class="spollers__body">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi,
+							augue
+							urna, mauris elementum ligula semper enim. Tristique sed sit facilisis ultrices rhoncus eget
+							ullamcorper tellus.
+									</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">How much time I will spend on planning?</summary>
+									<div class="spollers__body">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi,
+							augue
+							urna, mauris elementum ligula semper enim. Tristique sed sit facilisis ultrices rhoncus eget
+							ullamcorper tellus.
+									</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">Can I specify delivery date when ordering?</summary>
+									<div class="spollers__body">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi,
+							augue
+							urna, mauris elementum ligula semper enim. Tristique sed sit facilisis ultrices rhoncus eget
+							ullamcorper tellus.
+									</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">Are there any discounts included?</summary>
+									<div class="spollers__body">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi,
+							augue
+							urna, mauris elementum ligula semper enim. Tristique sed sit facilisis ultrices rhoncus eget
+							ullamcorper tellus.
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="blogs hero--blogs">
+					<div class="blogs__container">
+						<div class="blogs__inner-container">
+							<div class="blogs__title-block title-block">
+								<h2 data-fls-title="" class="title-block__title title">latest blog posts</h2>
+								<div class="title-block__text">
+									Id at urna non viverra eu volutpat porttitor elementum. Viverra
+						senectus dui ultricies dolor.
+								</div>
+							</div>
+							<div class="blogs__colums">
+								<div class="blogs__column column-blog">
+									<picture>
+										<img class="column-blog__image" alt="Image" src="./assets/img/blogs/01.webp">
+									</picture>
+									<div class="column-blog__body">
+										<div class="column-blog__data">Mar 30, 2021</div>
+										<h2 class="column-blog__title">modern vibes bedrooms, todays trending design</h2>
+										<div data-fls-showmore="" class="column-blog__block">
+											<div data-fls-showmore-content="100" class="column-blog__content">
+												Consequat, volutpat morbi tempor elit tellus, ante in mattis. Facilisi morbi ipsum
+									dui aliquet
+									Consequat, volutpat morbi tempor elit tellus, ante in mattis. Facilisi morbi ipsum
+									dui aliquet
+											</div>
+											<button hidden data-fls-showmore-button="" type="button" class="column-blog__more">
+												<span>Read More</span>
+												<span>Hidden</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="blogs__column column-blog">
+									<picture>
+										<img class="column-blog__image" alt="Image" src="./assets/img/blogs/02.webp">
+									</picture>
+									<div class="column-blog__body">
+										<div class="column-blog__data">Mar 29, 2021</div>
+										<h2 class="column-blog__title">How to make minimalist living rooms pop-out</h2>
+										<div data-fls-showmore="" class="column-blog__block">
+											<div data-fls-showmore-content="100" class="column-blog__content">
+												Consequat, volutpat morbi tempor elit tellus, ante in mattis. Facilisi morbi ipsum
+									dui aliquet
+									Consequat, volutpat morbi tempor elit tellus, ante in mattis. Facilisi morbi ipsum
+									dui aliquet
+											</div>
+											<button hidden data-fls-showmore-button="" type="button" class="column-blog__more">
+												<span>Read More</span>
+												<span>Hidden</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="blogs__column column-blog">
+									<picture>
+										<img class="column-blog__image" alt="Image" src="./assets/img/blogs/03.webp">
+									</picture>
+									<div class="column-blog__body">
+										<div class="column-blog__data">Mar 27, 2021</div>
+										<h2 class="column-blog__title">how to make your resort that looks outstanding</h2>
+										<div data-fls-showmore="" class="column-blog__block">
+											<div data-fls-showmore-content="100" class="column-blog__content">
+												Consequat, volutpat morbi tempor elit tellus, ante in mattis. Facilisi morbi ipsum
+									dui aliquet
+									Consequat, volutpat morbi tempor elit tellus, ante in mattis. Facilisi morbi ipsum
+									dui aliquet
+											</div>
+											<button hidden data-fls-showmore-button="" type="button" class="column-blog__more">
+												<span>Read More</span>
+												<span>Hidden</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button data-fls-button="" class="button blogs__body-button">
+								View my works
+								<span class="--icon-arrow"></span>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="contact hero--contact">
+					<div class="contact__container">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/contacts/contacts-bg-600.webp" type="image/webp">
+							<img class="contact__bg" alt="Image" src="./assets/img/contacts/contacts-bg.webp">
+						</picture>
+						<div class="contact__body">
+							<h2 data-fls-title="" class="contact__title title">contact me</h2>
+							<div class="contact__text">
+								Get in touch by staying connected with us. If you have any question about
+					our process or company? Let us know how we can help. Feel free to contact us.
+							</div>
+							<form class="contact__form form">
+								<div class="form__body">
+									<input data-fls-input="" required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="your first name*" class="form__input">
+									<input data-fls-input="" required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="your last name*" class="form__input">
+									<input data-fls-input="" required autocomplete="off" type="email" name="form[]" data-error="Помилка" placeholder="your email address*" class="form__input">
+									<input data-fls-input="" autocomplete="off" type="number" name="form[]" data-error="Помилка" placeholder="your phone number" class="form__input">
+									<textarea class="form__message" placeholder="your message"></textarea>
+								</div>
+								<button class="form__button">submit</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__content">
+						<div class="footer__column social">
+							<div class="social__logo-block">
+								<a href="top">
+									<a href="#" class="social__logo-icon --icon-logo"></a>
+									<p class="social__logo-text">ARCT</p>
+								</a>
+							</div>
+							<p class="social__text">
+								Tristique lacus ullamcorper massa posuere nisl molestie. Nullam montes, tortor rhoncus massa. Nisl
+					tellus etiam nec, urna.
+							</p>
+							<div class="social__icons">
+								<a href="#" class="social__icon --icon-facebook"></a>
+								<a href="#" class="social__icon --icon-twiter"></a>
+								<a href="#" class="social__icon --icon-instagram"></a>
+								<a href="#" class="social__icon --icon-youtub"></a>
+								<a href="#" class="social__icon --icon-Be"></a>
+							</div>
+						</div>
+						<div class="footer__column links">
+							<h3 class="footer__column-title">Quick Links</h3>
+							<ul class="links__list">
+								<li class="links__item">
+									<a href="#" class="links__link">home</a>
+								</li>
+								<li class="links__item">
+									<a href="#" class="links__link">about us</a>
+								</li>
+								<li class="links__item">
+									<a href="#" class="links__link">services</a>
+								</li>
+								<li class="links__item">
+									<a href="#" class="links__link">portfolios</a>
+								</li>
+								<li class="links__item">
+									<a href="#" class="links__link">blogs</a>
+								</li>
+								<li class="links__item">
+									<a href="#" class="links__link">contact us</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__column contact">
+							<h3 class="footer__column-title">contact info</h3>
+							<ul class="contact__list">
+								<li class="contact__item --icon-map">2489 Locust Court, Los Angeles</li>
+								<li class="contact__item --icon-map">3927 Red Maple Drive, Los Angeles</li>
+								<li class="contact__item --icon-phone">
+									<a href="tel:+1234567890" class="contact__link">+63 667 341 3463</a>
+								</li>
+								<li class="contact__item --icon-mail">
+									<a href="mailto:contact@templatesjungle.com" class="contact__link">contact@templatesjungle.com</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__column subscribe">
+							<h3 class="footer__column-title">subscribe us</h3>
+							<p class="subscribe__text">
+								Subscribe to our newsletter to stay updated for new products and stunnning
+					news.
+							</p>
+							<form class="subscribe__form">
+								<input data-fls-input="" autocomplete="off" type="email" name="form[]" data-error="Помилка" placeholder="Enter your email" class="subscribe__input">
+								<button type="submit" class="subscribe__button --icon-send">send</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer__copy">&copy; 2024 ARCT. All rights reserved.</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
