@@ -6,7 +6,8 @@
 
 **Live Demo: [https://recordline1.github.io/ARCT/](https://recordline1.github.io/ARCT/)**
 
-<i>A responsive and modern portfolio webpage for a ARCT, featuring sections for services, testimonials, special offers, FAQs, and a subscription form. Built with HTML, SCSS, and JavaScript, it includes interactive sliders, adaptive design, and smooth animations for an engaging user experience.</i>
+<i>ARCT — Responsive Landing Page
+A modern, responsive landing page built with HTML, CSS, and JavaScript. The project presents an architectural studio concept with structured content sections, project showcases, and visually clean UI elements. Focused on adaptive layout, clear typography, and user-friendly navigation, this project demonstrates front-end development skills and attention to design details.</i>
 
 <img width="714" height="auto" alt="image" src="https://github.com/user-attachments/assets/c3c4921e-cf9b-4cb3-8bad-3c0c48236388" />
 
