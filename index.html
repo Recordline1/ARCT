@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/logo.ico">
 		<title>ARCT</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1767210301222"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1767210301222">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1767211546894"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1767211546894">
 		<link rel="preload" as="style" href="./css/webfonts.min.css">
 		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
 	</head>
@@ -44,10 +44,10 @@
 						<p class="header__logo-text">ARCT</p>
 					</div>
 					<div class="header__buttons">
-						<button data-fls-darklite-set="" type="button" class="header__button header__theme --icon-moon-sleep-svgrepo-com"></button>
-						<button type="button" class="header__button header__search --icon-search"></button>
+						<button id="darklite-set" title="change-theme" data-fls-darklite-set="" type="button" class="header__button header__theme --icon-moon-sleep-svgrepo-com"></button>
+						<button id="search-button" title="search-icon" type="button" class="header__button header__search --icon-search"></button>
 						<div data-fls-menu="" class="header__button">
-							<button type="button" class="icon-menu">
+							<button id="burger-icon" title="menu-burger" type="button" class="icon-menu">
 								<span></span>
 							</button>
 						</div>
@@ -69,8 +69,8 @@
 						<div class="hero__control-panel">
 							<div class="hero__slider-pagination"></div>
 							<div class="hero__slider-buttons">
-								<button class="hero__slider-button hero__slider-button-prev"></button>
-								<button class="hero__slider-button hero__slider-button-next"></button>
+								<button id="sliderButtonPrev" title="Button Prev" class="hero__slider-button hero__slider-button-prev"></button>
+								<button id="sliderButtonNext" title="Button Next" class="hero__slider-button hero__slider-button-next"></button>
 							</div>
 						</div>
 						<div data-fls-slider="" class="hero__slider swiper">
