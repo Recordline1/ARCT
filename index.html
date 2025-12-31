@@ -5,15 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/logo.ico">
 		<title>ARCT</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1767211546894"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1767211546894">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1767212674185"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1767212674185">
 		<link rel="preload" as="style" href="./css/webfonts.min.css">
 		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
 	</head>
 	<body>
 		<div class="header__menu menu">
 			<nav class="menu__body">
-				<button data-fls-menu="" type="button" class="menu__close"></button>
+				<button id="menuButtonClose" title="Menu Close" data-fls-menu="" type="button" class="menu__close"></button>
 				<ul class="menu__list">
 					<li data-fls-scrollto-header="" data-fls-scrollto=".hero" class="menu__item">
 						<a href="#" class="menu__link">Home</a>
@@ -55,8 +55,8 @@
 				</div>
 				<div class="header__search-body">
 					<div class="header__input-body">
-						<input data-fls-input="" autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="" class="header__input">
-						<button type="button" class="header__search-close"></button>
+						<input data-fls-input="" autocomplete="off" type="text" name="form[]" aria-label="Search" data-error="Помилка" placeholder="" class="header__input">
+						<button id="searchButton" title="Search Close" type="button" class="header__search-close"></button>
 					</div>
 				</div>
 			</header>
@@ -546,11 +546,11 @@
 							</div>
 							<form class="contact__form form">
 								<div class="form__body">
-									<input data-fls-input="" required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="your first name*" class="form__input">
-									<input data-fls-input="" required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="your last name*" class="form__input">
-									<input data-fls-input="" required autocomplete="off" type="email" name="form[]" data-error="Помилка" placeholder="your email address*" class="form__input">
-									<input data-fls-input="" autocomplete="off" type="number" name="form[]" data-error="Помилка" placeholder="your phone number" class="form__input">
-									<textarea class="form__message" placeholder="your message"></textarea>
+									<input aria-label="your first name" data-fls-input="" required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="your first name*" class="form__input">
+									<input aria-label="your last name" data-fls-input="" required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="your last name*" class="form__input">
+									<input aria-label="your email address" data-fls-input="" required autocomplete="off" type="email" name="form[]" data-error="Помилка" placeholder="your email address*" class="form__input">
+									<input aria-label="your phone number" data-fls-input="" autocomplete="off" type="number" name="form[]" data-error="Помилка" placeholder="your phone number" class="form__input">
+									<textarea aria-label="your message" class="form__message" placeholder="your message"></textarea>
 								</div>
 								<button class="form__button">submit</button>
 							</form>
