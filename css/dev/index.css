@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap");@import url("https://fonts.googleapis.com/css2?family=Prata:wght@400&display=swap");* {
+* {
 	padding: 0rem;
 	margin: 0rem;
 	border: 0rem;
@@ -1229,17 +1229,17 @@ textarea.input {
   text-transform: uppercase;
   color: #fff;
 }
-@media (max-width: 78.125em){
+@media (max-width: 78.125em) {
   .footer__content {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (max-width: 53.75em){
+@media (max-width: 53.75em) {
   .faqs__inner-container {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 47.99875em){
+@media (max-width: 47.99875em) {
   .footer__content {
     grid-template-columns: 1fr 1fr;
   }
@@ -1260,17 +1260,17 @@ textarea.input {
     margin: 0 -0.9375rem;
   }
 }
-@media (max-width: 40.625em){
+@media (max-width: 40.625em) {
   .footer__content {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 37.5em){
+@media (max-width: 37.5em) {
   .form__body {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 20em){
+@media (max-width: 20em) {
   .tabs__title {
     font-size: 1rem;
   }
@@ -1458,7 +1458,7 @@ textarea.input {
     margin-bottom: 1.875rem;
   }
 }
-@media (min-width: 20em) and (max-width: 112.5em){
+@media (min-width: 20em) and (max-width: 112.5em) {
   .tabs__title {
     font-size: clamp( 1rem , 0.93243243243125rem  +  0.3378378378vw , 1.3125rem );
   }
@@ -1646,17 +1646,17 @@ textarea.input {
     margin-bottom: clamp( 1.875rem , 1.199324324325rem  +  3.3783783784vw , 5rem );
   }
 }
-@media (min-width: 37.5em){
+@media (min-width: 37.5em) {
   .form__message {
     grid-column: span 2;
   }
 }
-@media (min-width: 40.625em){
+@media (min-width: 40.625em) {
   .tabs__all {
     grid-template: repeat(4, auto)/repeat(auto-fit, minmax(min(24.6875rem, 100%), 1fr));
   }
 }
-@media (min-width: 47.99875em){
+@media (min-width: 47.99875em) {
   .hero__inner {
     flex-direction: row;
     align-items: center;
@@ -1678,7 +1678,7 @@ textarea.input {
     justify-content: end;
   }
 }
-@media (min-width: 112.5em){
+@media (min-width: 112.5em) {
   .tabs__title {
     font-size: 1.3125rem;
   }
@@ -1866,7 +1866,7 @@ textarea.input {
     margin-bottom: 5rem;
   }
 }
-@media (any-hover: hover){
+@media (any-hover: hover) {
   .spollers__title:hover {
     box-shadow: 0 0.0625rem 0 0 rgba(0, 0, 0, 0.04);
     background: #cac8c8;
@@ -1909,7 +1909,7 @@ textarea.input {
     background-color: #939393;
   }
 }
-@media (any-hover: none){
+@media (any-hover: none) {
   .icon-menu {
     cursor: default;
   }
