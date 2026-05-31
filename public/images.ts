@@ -2,9 +2,9 @@
 
 
 export const IMG = {
-    hero1: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80',
-    hero2: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80',
-    hero3: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=80',
+    hero1: './images/hero1.jpg',
+    hero2: './images/hero2.jpg',
+    hero3: './images/hero3.jpg',
     p37: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80',
     p38: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80',
     p40: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80',
