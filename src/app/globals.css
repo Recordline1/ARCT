@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/* 1. Интегрируем наши шрифты из layout.tsx в систему Tailwind */
+@theme {
+  /* ----------Main-------------------- */
+  --font-sans: var(--font-inter);
+  --font-secondary: var(--font-playfair);
+  --color-main-color: var(--main-color);
+  --color-background: var(--background);
+  --color-brand: var(--color-brand);
+  /* ----------Burger-------------------- */
+  --color-bg-burger: var(--color-bg-burger);
+  --color-burger-hover: var(--color-burger-hover);
+  /* ----------Search-------------------- */
+  --color-search: var(--color-search);
+  /* ----------Pagination-------------------- */
+  --color-pagination: var(--color-pagination);
+  /* ----------about-------------------- */
+  --color-about-subtitle: var(--about-subtitle);
+  --color-about-bg: var(--about-bg);
+  /* ----------contact-------------------- */
+  --color-contact-subtitle: var(--contact-subtitle);
+
+  /* ----------Title-------------------- */
+  --color-title-color: var(--title-color);
+  /* ----------Logo-------------------- */
+  --color-logo-hover: var(--logo-hover);
+
+
+}
+
+
+:root {
+  --color-brand: #91795c;
+  --background: #ffffff;
+  --main-color: #818181;
+  --title-color: #201F1F;
+  --color-bg-burger: #767677;
+  --color-search: #767677;
+  --color-burger-hover: #636364;
+  --color-pagination: #cfcfcf;
+  --about-subtitle: #363535;
+  --contact-subtitle: #363535;
+  --about-bg: #ffffff;
+  --logo-hover: #9b6d35;
+
+  --title-30-49: clamp(1.875rem, 1.6375rem + 1.1875vw, 3.0625rem);
+  --title-gap: clamp(0.625rem, 0.45rem + 0.875vw, 1.5rem);
+  --column-service-gap: clamp(1rem, 0.6rem + 2vw, 3rem);
+}
+
+
+.dark {
+  --background: #1a1a1a;
+  --main-color: #ededed;
+  --about-subtitle: #ededed;
+  --about-bg: #1a1a1a;
+  --title-color: #91795c;
+  --contact-subtitle: #818181;
+
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--main-color);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+@layer components {
+  .swiper-pagination-bullet {
+    @apply inline-flex items-center justify-center text-sm text-pagination font-medium cursor-pointer transition-colors duration-300 w-6 h-6;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply text-brand font-bold scale-125;
+  }
+}
+
+@layer components {
+  .clientsSays-pagination .swiper-pagination-bullet {
+    @apply w-[10] h-[10] rounded-none bg-pagination opacity-100 cursor-pointer transition-colors duration-300;
+  }
+
+  .clientsSays-pagination .swiper-pagination-bullet-active {
+    @apply bg-brand scale-125;
+  }
+}
+
+
+@layer utilities {
+  .gap-service {
+    gap: var(--column-service-gap);
+  }
+}
+
+@layer components {
+  .title {
+    font-size: var(--title-30-49);
+    font-family: var(--font-secondary);
+    color: var(--title-color);
+    gap: var(--title-gap)
+  }
+}
+
+@layer components {
+  .with_decor_line {
+     display: flex; flex-direction: column; align-items: center;
+  }
+
+  .with_decor_line::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background-color: var(--color-brand);
+    margin-top: 1rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 20px;
+}
