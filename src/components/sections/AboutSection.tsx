@@ -39,6 +39,7 @@ export function AboutSection() {
 						<AnimatePresence mode="wait">
 							<motion.img
 								key={activeTab}
+								alt={aboutData.find(t => t.id === activeTab)?.label}
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
 								src={aboutData.find(t => t.id === activeTab)?.image}
