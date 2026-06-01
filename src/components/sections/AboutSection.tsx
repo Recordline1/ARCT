@@ -19,7 +19,7 @@ export function AboutSection() {
 						<div className="flex flex-col overflow-hidden">
 						<Title className='mb-4'>about me</Title>
 
-						<div className="flex gap-8 mb-8 border-b border-gray-200 overflow-x-auto ">
+						<div className="flex gap-8 mb-8 border-b border-gray-200 overflow-x-auto scrollbar-hidden">
 							{aboutData.map(tab => (
 								<button
 									key={tab.id}

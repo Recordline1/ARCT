@@ -10,7 +10,7 @@ const services = [
 
 export function MyService() {
     return (
-        <section className="py-24 bg-white text-neutral-900">
+        <section className="py-7 md:py-15 bg-white text-neutral-900">
             <Container>
 
                 <Title className="mb-20">View My Services</Title>

@@ -73,7 +73,7 @@ export const slides: ProjectSlide[] = [
   }
 ];
 
-// ---------------------------aboutData---------------------------
+// ---------------------------AboutData---------------------------
 
 export interface AboutItem {
   id: string;
@@ -103,7 +103,7 @@ export const aboutData: AboutItem[] = [
   }
 ];
 
-// ---------------------------projects---------------------------
+// ---------------------------Projects---------------------------
 
 export interface Project {
   id: number;
@@ -283,5 +283,43 @@ export const projects: Project[] = [
       materials: ["Structural Glass", "Stainless Steel", "Bamboo"],
     },
   },
+];
+
+// ---------------------------Blogs---------------------------
+
+interface BlogPost {
+    id: number;
+    date: string;
+    title: string;  
+    shortExcerpt: string;
+    fullExcerpt: string;
+    img: string;
+}
+
+export const posts: BlogPost[] = [
+    {
+        id: 1,
+        date: "Mar 30, 2021",
+        title: "Modern Vibes Bedrooms, Todays Trending Design",
+        shortExcerpt: "Consequat, volutpat morbi tempor elit tellus, ante in mattis.",
+        fullExcerpt: "Facilisi morbi ipsum dui aliquet. To achieve the perfect modern bedroom, balance is key: incorporate soft, ambient lighting, high-quality natural textiles, and a minimalist color palette. This approach creates a serene atmosphere while highlighting the structural beauty of the space, ensuring both comfort and aesthetic appeal.",
+        img: "/images/blog1.jpg", 
+    },
+    {
+        id: 2,
+        date: "Mar 29, 2021",
+        title: "How To Make Minimalist Living Rooms Pop-Out",
+        shortExcerpt: "Consequat, volutpat morbi tempor elit tellus, ante in mattis.",
+        fullExcerpt: "Facilisi morbi ipsum dui aliquet. Minimalist design does not mean lack of character. By introducing a focal point—such as a statement sculptural piece or a contrasting texture—you can add depth to the room. We explore how precise spatial planning and subtle lighting accents transform a simple living space into a captivating, sophisticated environment.",
+        img: "/images/blog2.jpg",
+    },
+    {
+        id: 3,
+        date: "Mar 27, 2021",
+        title: "How To Make Your Resort That Looks Outstanding",
+        shortExcerpt: "Consequat, volutpat morbi tempor elit tellus, ante in mattis.",
+        fullExcerpt: "Facilisi morbi ipsum dui aliquet. An outstanding resort design merges architecture with the surrounding landscape. By utilizing local materials and creating fluid transitions between indoor and outdoor areas, you can provide guests with an immersive experience. This section covers landscape integration strategies and exterior lighting that elevate a property to a luxury standard.",
+        img: "/images/blog3.jpg",
+    },
 ];
 

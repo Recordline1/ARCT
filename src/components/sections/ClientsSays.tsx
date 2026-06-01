@@ -78,7 +78,7 @@ export function ClientsSays() {
               <SwiperSlide key={t.id}>
                 <div className="flex flex-col gap-8">
 
-                  <Quotes className="text--main-color opacity-40" width={52} height={40} />
+                  <Quotes className="text--main-color opacity-40 mt-3" width={40} height={32} />
 
                   <p className="text-gray-600 text-lg leading-[1.9]">
                     "{t.quote}"

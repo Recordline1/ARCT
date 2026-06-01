@@ -66,7 +66,7 @@ export function Hero() {
                   {slide.text}
                 </p>
                 <Link href={`Hero/${slide.id}`}>
-                  <Button>
+                  <Button aria-label='button view project'>
                     View Project
                   </Button>
                 </Link>

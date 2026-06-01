@@ -37,7 +37,7 @@ export function ContactSection() {
 
   return (
     
-    <section className="bg-background pt-15 lg:pt-32 pb-0 overflow-hidden transition-colors duration-300">
+    <section className="bg-background pt-10 lg:pt-32 pb-0 overflow-hidden transition-colors duration-300">
       <Container>
         <div className="flex flex-col lg:flex-row items-stretch">
           

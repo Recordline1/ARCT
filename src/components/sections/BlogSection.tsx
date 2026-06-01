@@ -5,34 +5,9 @@ import Image from "next/image";
 import { Container } from "@components/layout/Container";
 import { Title } from "@components/ui/Title";
 import { Button } from "@components/ui/Button";
-import Link from 'next/link';
+import { posts } from "@/data/data";
 
-export const posts = [
-    {
-        id: 1,
-        date: "Mar 30, 2021",
-        title: "Modern Vibes Bedrooms, Todays Trending Design",
-        shortExcerpt: "Consequat, volutpat morbi tempor elit tellus, ante in mattis.",
-        fullExcerpt: "Facilisi morbi ipsum dui aliquet. Дополнительный текст, который появляется только после того, как пользователь нажал на кнопку Read More внизу плашки.",
-        img: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80",
-    },
-    {
-        id: 2,
-        date: "Mar 29, 2021",
-        title: "How To Make Minimalist Living Rooms Pop-Out",
-        shortExcerpt: "Consequat, volutpat morbi tempor elit tellus, ante in mattis.",
-        fullExcerpt: "Facilisi morbi ipsum dui aliquet. Здесь находится продолжение статьи про дизайн гостиных, секреты освещения и расстановки мебели в минимализме.",
-        img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
-    },
-    {
-        id: 3,
-        date: "Mar 27, 2021",
-        title: "How To Make Your Resort That Looks Outstanding",
-        shortExcerpt: "Consequat, volutpat morbi tempor elit tellus, ante in mattis.",
-        fullExcerpt: "Facilisi morbi ipsum dui aliquet. Оставшийся текст для третьей карточки, описывающий экстерьер загородного резорта и ландшафтные решения.",
-        img: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&q=80",
-    },
-];
+
 
 export function BlogSection() {
     return (

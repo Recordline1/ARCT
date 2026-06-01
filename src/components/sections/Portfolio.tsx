@@ -20,11 +20,11 @@ export function Portfolio() {
         : projects.filter(p => p.category === activeTab);
 
     return (
-        <section className="py-15 bg-background">
+        <section className="py-7 md:py-15 bg-background">
             <Container>
                 <Title className='mb-6'>My Portfolio</Title>
 
-                <div className="flex gap-8 mb-12 overflow-x-auto pb-4">
+                <div className="flex gap-8 mb-12 overflow-x-auto scrollbar-hidden pb-4">
                     {categories.map((cat) => (
                         <button
                             key={cat}

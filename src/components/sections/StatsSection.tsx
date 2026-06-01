@@ -15,7 +15,7 @@ export function StatsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="md:py-9  bg-background grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+    <section ref={ref} className="py-7 md:py-9  bg-background grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
       {stats.map((stat, index) => (
         <motion.div
           key={index}

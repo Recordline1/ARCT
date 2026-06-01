@@ -36,7 +36,7 @@ export function FaqSection() {
 
     return (
 
-        <section className="bg-background  py-15 transition-colors duration-300">
+        <section className="bg-background py-7 md:py-15 transition-colors duration-300">
             <Container>
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
 

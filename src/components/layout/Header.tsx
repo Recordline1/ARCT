@@ -42,6 +42,7 @@ export function Header({ isMenuOpen, toggleMenu, isScrolled }: HeaderProps) {
           </div>
           <button
             onClick={() => setIsSearchOpen(true)}
+            aria-label="search button"
             className="cursor-pointer w-[44px] h-[44px] flex justify-center items-center rounded-full bg-bg-burger text-white transition-color duration-300 hover:bg-burger-hover hover:text-brand"
           >
             <SearchIcon className="w-4 h-4" />
