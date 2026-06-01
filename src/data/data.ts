@@ -5,7 +5,6 @@ export interface ProjectSlide {
   bg: string;
   title: string;
   text: string;
-
   location: string;
   year: string;
   area: string;
